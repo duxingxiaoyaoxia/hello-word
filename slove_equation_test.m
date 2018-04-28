@@ -1,0 +1,6 @@
+clear all
+syms a1 a2 a3 a4
+
+[a1,a2,a3,a4]=solve('(a1+a2+a3+a4)*conj(a1+a2+a3+a4)=1','(a1-a2*1i-a3+a4*1i)*conj(a1-a2*1i-a3+a4*1i)=1',...
+    '(a1-a2+a3-a4)*conj(a1-a2+a3-a4)=1','(a1+a2*1i-a3-a4*1i)*conj(a1+a2*1i-a3-a4*1i)=1',...
+    '(a1-a2*(1+1i)+a3-a4)*conj(a1-a2*(1+1i)+a3-a4)=2.5','a1','a2','a3','a4')
